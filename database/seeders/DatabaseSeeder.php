@@ -7,6 +7,7 @@ namespace Database\Seeders;
 use App\Models\Program;
 use Illuminate\Database\Seeder;
 use App\Models\Student;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,6 +24,7 @@ class DatabaseSeeder extends Seeder
         // ]);
        $this->call(ProgramSeeder::class);
        $this->call(StudentSeeder::class);
+       $this->call(UserSeeder::class);
        Program::factory(5)->create();
        Student::factory(5)->create();
     }

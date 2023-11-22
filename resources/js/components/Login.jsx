@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 function Login() {
     const [formValue, setformValue] = useState({
         email: '',
-        password: ''
+        password: '',
     })
     const navigate = useNavigate();
         const onChange = (e) => {
